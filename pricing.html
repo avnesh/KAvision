@@ -6,8 +6,13 @@
     <title>Pricing | KA Vision - Transparent Hourly Rates</title>
     <meta name="description" content="Clear per-hour pricing for Manual Testing and Automation Testing services by KA Vision.">
     
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Tailwind Configuration -->
     <script>
         tailwind.config = {
             theme: {
@@ -27,10 +32,9 @@
             }
         }
     </script>
-    
 
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="bg-qa-light text-qa-dark font-sans">
 
@@ -80,15 +84,15 @@
                     <h2 class="text-3xl font-bold text-center text-qa-dark mb-6">Project Cost Estimator</h2>
                     <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-8 text-center">Enter your estimated hours below to get an instant cost calculation based on our base rates.</p>
                     
-                    <div class="max-w-xl mx-auto space-y-6">
-                        <div class="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0 sm:space-x-4">
-                            <label for="manual_hours" class="font-medium text-qa-dark flex-shrink-0 w-full sm:w-auto">Enter **Manual** Hours (₹800/hr)</label>
-                            <input type="number" id="manual_hours" value="0" min="0" placeholder="e.g., 60" class="w-full sm:w-32 rounded-md border-gray-300 shadow-sm p-2 text-center border focus:border-primary focus:ring-primary">
-                        </div>
-                        <div class="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0 sm:space-x-4">
-                            <label for="automation_hours" class="font-medium text-qa-dark flex-shrink-0 w-full sm:w-auto">Enter **Automation** Hours (₹1100/hr)</label>
-                            <input type="number" id="automation_hours" value="0" min="0" placeholder="e.g., 50" class="w-full sm:w-32 rounded-md border-gray-300 shadow-sm p-2 text-center border focus:border-accent focus:ring-accent">
-                        </div>
+                    <div class="max-w-3xl mx-auto space-y-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+        <label for="manual_hours" class="font-medium text-qa-dark md:text-right">Enter <strong>Manual</strong> Hours (₹800/hr)</label>
+        <input type="number" id="manual_hours" value="0" min="0" placeholder="e.g., 60" class="w-full rounded-md border-gray-300 shadow-sm p-3 text-center border focus:border-primary focus:ring-primary text-lg">
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+        <label for="automation_hours" class="font-medium text-qa-dark md:text-right">Enter <strong>Automation</strong> Hours (₹1100/hr)</label>
+        <input type="number" id="automation_hours" value="0" min="0" placeholder="e.g., 50" class="w-full rounded-md border-gray-300 shadow-sm p-3 text-center border focus:border-accent focus:ring-accent text-lg">
+    </div>
                         
                         <div class="text-center pt-4 border-t border-gray-300">
                             <h3 class="text-2xl font-extrabold text-accent">Total Estimated Cost:</h3>

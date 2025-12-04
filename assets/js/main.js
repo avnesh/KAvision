@@ -112,3 +112,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+function toggleFaq(button) {
+    const faqItem = button.closest(".faq-item");
+    const content = faqItem.querySelector(".faq-content");
+    const icon = faqItem.querySelector(".faq-icon");
+
+    const isOpen = content.style.maxHeight && content.style.maxHeight !== "0px";
+
+    // Close all FAQ items
+    document.querySelectorAll(".faq-content").forEach(el => {
+        el.style.maxHeight = "0px";
+    });
+
+    document.querySelectorAll(".faq-icon").forEach(ic => {
+        ic.style.transform = "rotate(0deg)";
+    });
+
+    // Open clicked FAQ if it was closed
+    if (!isOpen) {
+        content.style.maxHeight = content.scrollHeight + "px";
+        icon.style.transform = "rotate(45deg)"; // plus → X
+    }
+}

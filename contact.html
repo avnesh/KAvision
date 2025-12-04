@@ -6,8 +6,13 @@
     <title>Contact Us | KA Vision - Get a Quote</title>
     <meta name="description" content="Contact KA Vision for a free QA consultation. Find our email, phone, and send us your project requirements.">
     
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Tailwind Configuration -->
     <script>
         tailwind.config = {
             theme: {
@@ -28,9 +33,8 @@
         }
     </script>
 
-
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="bg-qa-light text-qa-dark font-sans">
 
@@ -47,7 +51,7 @@
         <section class="bg-qa-light">
             <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 lg:grid lg:grid-cols-2 lg:gap-16">
                 
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out border-2 border-qa-light/50">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out border-2 border-qa-light/50 h-fit">
                     <h2 class="text-3xl font-bold text-qa-dark mb-6">Send Us Your Requirements</h2>
                     <form action="#" method="POST" class="space-y-4">
                         <div>
@@ -88,38 +92,82 @@
                 <div class="mt-12 lg:mt-0">
                     <h2 class="text-3xl font-bold text-qa-dark mb-6">Our Contact Details</h2>
                     <div class="space-y-6">
-                        <div class="bg-qa-light p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
                             <h4 class="font-semibold text-xl text-primary mb-2">Email Us</h4>
                             <a href="mailto:kavision1430@gmail.com" class="text-lg text-gray-700 hover:text-accent transition duration-150">kavision1430@gmail.com</a>
                         </div>
-                        <div class="bg-qa-light p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
                             <h4 class="font-semibold text-xl text-primary mb-2">Call Us</h4>
                             <a href="tel:+917710819626" class="text-lg text-gray-700 hover:text-accent transition duration-150">+91 7710819626</a>
                         </div>
-                        <div class="bg-qa-light p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
                             <h4 class="font-semibold text-xl text-primary mb-2">Communication Channel</h4>
                             <p class="text-lg text-gray-700">We communicate via WhatsApp, Email, or preferred channel.</p>
                         </div>
                     </div>
 
-                    <div id="faq" class="mt-12">
-                        <h3 class="text-2xl font-bold text-qa-dark mb-4">Quick FAQ</h3>
-                        <div class="space-y-4">
-                            <div class="p-4 border rounded-lg hover:bg-white transition duration-300">
-                                <h4 class="font-medium text-qa-dark">How does your hourly billing work?</h4>
-                                <p class="text-sm text-gray-600 mt-1">Our services are primarily charged on an hourly basis. We provide detailed reports of hours spent on test execution and reporting.</p>
-                            </div>
-                            <div class="p-4 border rounded-lg hover:bg-white transition duration-300">
-                                <h4 class="font-medium text-qa-dark">What tools do you use?</h4>
-                                <p class="text-sm text-gray-600 mt-1">Our expertise covers **Selenium, Appium, JMeter, Postman, JIRA, and TestNG**. We adapt to your project's specific needs.</p>
-                            </div>
-                            <div class="p-4 border rounded-lg hover:bg-white transition duration-300">
-                                <h4 class="font-medium text-qa-dark">What support is included after delivery?</h4>
-                                <p class="text-sm text-gray-600 mt-1">We offer post-delivery support for bug review (**15 days**) and any clarifications needed (**30 days**).</p>
-                            </div>
-                        </div>
-                    </div>
+                   <div id="faq" class="mt-12">
+    <h3 class="text-2xl font-bold text-qa-dark mb-6">Frequently Asked Questions</h3>
+
+    <div class="space-y-4">
+
+        <!-- FAQ Item -->
+        <div class="faq-item bg-white rounded-xl shadow-md border-l-4 border-primary border-t-0 border-b-0 overflow-hidden">
+            <button class="faq-btn w-full flex items-center justify-between p-5 text-left" onclick="toggleFaq(this)">
+                <span class="text-lg font-semibold text-qa-dark">How does your hourly billing work?</span>
+                <svg class="faq-icon w-6 h-6 text-primary transition-transform duration-300"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                           d="M12 4v16m8-8H4" />
+                </svg>
+            </button>
+            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="px-5 pb-5 pt-2 text-gray-600">
+                    Our services are charged hourly with transparent reporting of execution time, bug reporting,
+                    meetings, and documentation.
                 </div>
+            </div>
+        </div>
+
+        <!-- FAQ Item -->
+        <div class="faq-item bg-white rounded-xl shadow-md border-l-4 border-primary border-t-0 border-b-0 overflow-hidden">
+            <button class="faq-btn w-full flex items-center justify-between p-5 text-left" onclick="toggleFaq(this)">
+                <span class="text-lg font-semibold text-qa-dark">What tools do you use?</span>
+                <svg class="faq-icon w-6 h-6 text-accent transition-transform duration-300"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                           d="M12 4v16m8-8H4" />
+                </svg>
+            </button>
+            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="px-5 pb-5 pt-2 text-gray-600">
+                    We work with <strong>Selenium, Appium, JMeter, Postman, REST Assured, JIRA, TestNG,</strong>
+                    and more, adapting to your project's needs.
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Item -->
+        <div class="faq-item bg-white rounded-xl shadow-md border-l-4 border-primary border-t-0 border-b-0 overflow-hidden">
+            <button class="faq-btn w-full flex items-center justify-between p-5 text-left" onclick="toggleFaq(this)">
+                <span class="text-lg font-semibold text-qa-dark">What support is included after delivery?</span>
+                <svg class="faq-icon w-6 h-6 text-primary transition-transform duration-300"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                           d="M12 4v16m8-8H4" />
+                </svg>
+            </button>
+            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="px-5 pb-5 pt-2 text-gray-600">
+                    We provide <strong>15 days bug support</strong> and <strong>30 days clarification support</strong>
+                    after delivery.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
             </div>
         </section>
     </main>
