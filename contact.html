@@ -17,8 +17,8 @@
                         'primary-dark': '#0f3261',
                         'accent': '#6EB53B',
                         'accent-dark': '#558a2d',
-                        'qa-dark': '#212529',
-                        'qa-light': '#F8F9FA',
+                        'qa-dark': '#111827',
+                        'qa-light': '#F9FAFB',
                     },
                     fontFamily: {
                         sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
@@ -45,7 +45,7 @@
         <section class="bg-white">
             <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 lg:grid lg:grid-cols-2 lg:gap-16">
                 
-                <div class="bg-white p-6 rounded-xl shadow-lg">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out border-2 border-qa-light/50">
                     <h2 class="text-3xl font-bold text-qa-dark mb-6">Send Us Your Requirements</h2>
                     <form action="#" method="POST" class="space-y-4">
                         <div>
@@ -80,7 +80,7 @@
                             <label for="message" class="block text-sm font-medium text-gray-700">Message/Requirements*</label>
                             <textarea id="message" name="message" rows="4" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary p-3 border"></textarea>
                         </div>
-                        <button type="submit" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-md text-white bg-primary hover:bg-primary-dark transition duration-300 ease-in-out transform hover:scale-[1.01] w-full">Submit Request</button>
+                        <button type="submit" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-md text-white bg-accent hover:bg-accent-dark transition duration-300 ease-in-out transform hover:scale-[1.01] w-full">Submit Request</button>
                     </form>
                 </div>
 
@@ -97,7 +97,7 @@
                         </div>
                         <div class="bg-qa-light p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
                             <h4 class="font-semibold text-xl text-primary mb-2">Communication Channel</h4>
-                            <p class="text-lg text-gray-700">We communicate via WhatsApp, Email, or preferred channel.</p>
+                            [cite_start]<p class="text-lg text-gray-700">We communicate via WhatsApp, Email, or preferred channel. [cite: 187, 286]</p>
                         </div>
                     </div>
 
@@ -106,15 +106,15 @@
                         <div class="space-y-4">
                             <div class="p-4 border rounded-lg hover:bg-white transition duration-300">
                                 <h4 class="font-medium text-qa-dark">How does your hourly billing work?</h4>
-                                <p class="text-sm text-gray-600 mt-1">Our services are primarily charged on an hourly basis. We provide detailed reports of hours spent on test execution and reporting.</p>
+                                <p class="text-sm text-gray-600 mt-1">Our services are primarily charged on an hourly basis. [cite_start]We provide detailed reports of hours spent on test execution and reporting. [cite: 175, 176, 264]</p>
                             </div>
                             <div class="p-4 border rounded-lg hover:bg-white transition duration-300">
                                 <h4 class="font-medium text-qa-dark">What tools do you use?</h4>
-                                <p class="text-sm text-gray-600 mt-1">Our expertise covers **Selenium, Appium, JMeter, Postman, JIRA, and TestNG**. We adapt to your project's specific needs.</p>
+                                <p class="text-sm text-gray-600 mt-1">Our expertise covers **Selenium, Appium, JMeter, Postman, JIRA, and TestNG**. [cite_start]We adapt to your project's specific needs. [cite: 6, 61]</p>
                             </div>
                             <div class="p-4 border rounded-lg hover:bg-white transition duration-300">
                                 <h4 class="font-medium text-qa-dark">What support is included after delivery?</h4>
-                                <p class="text-sm text-gray-600 mt-1">We offer post-delivery support for bug review (**15 days**) and any clarifications needed (**30 days**).</p>
+                                [cite_start]<p class="text-sm text-gray-600 mt-1">We offer post-delivery support for bug review (**15 days**) and any clarifications needed (**30 days**). [cite: 186, 285]</p>
                             </div>
                         </div>
                     </div>

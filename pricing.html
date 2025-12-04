@@ -17,8 +17,8 @@
                         'primary-dark': '#0f3261',
                         'accent': '#6EB53B',
                         'accent-dark': '#558a2d',
-                        'qa-dark': '#212529',
-                        'qa-light': '#F8F9FA',
+                        'qa-dark': '#111827',
+                        'qa-light': '#F9FAFB',
                     },
                     fontFamily: {
                         sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
@@ -27,6 +27,13 @@
             }
         }
     </script>
+    
+    <style>
+        .bg-qa-pattern {
+            background-color: #F9FAFB;
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23e0e0e0' fill-opacity='0.4'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40Z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -47,54 +54,50 @@
                 <h2 class="text-3xl font-bold text-center text-qa-dark mb-12">Flexible Hourly Rates</h2>
                 <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
                     
-                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out hover:scale-[1.03] text-center border-t-4 border-primary shadow-xl">
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out hover:scale-[1.03] text-center border-t-4 border-primary shadow-xl">
                         <h3 class="text-2xl font-bold text-qa-dark mb-3">Manual Testing</h3>
                         <p class="text-5xl font-extrabold text-primary mb-4">₹800<span class="text-xl text-gray-500">/hr</span></p>
                         <p class="text-lg text-gray-600 mb-6">For functional, UI/UX, exploratory, and cross-browser testing.</p>
                         <ul class="text-left space-y-2 text-gray-700">
-                            <li><span class="text-accent mr-3">✓</span> Full Test Case Documentation</li>
-                            <li><span class="text-accent mr-3">✓</span> Detailed Defect Reporting in JIRA</li>
-                            <li><span class="text-accent mr-3">✓</span> Two Cycles of Bug Retesting</li>
+                            [cite_start]<li><span class="text-accent mr-3">✓</span> Complete Test Case Document [cite: 105, 135]</li>
+                            [cite_start]<li><span class="text-accent mr-3">✓</span> Detailed Defect Reporting in JIRA [cite: 106, 136]</li>
+                            [cite_start]<li><span class="text-accent mr-3">✓</span> Two Cycles of Bug Retesting [cite: 65, 121]</li>
                         </ul>
                         <a href="contact.html?type=manual" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-md text-white bg-primary hover:bg-primary-dark transition duration-300 ease-in-out transform hover:scale-[1.01] mt-6 w-full">Start Manual QA</a>
                     </div>
 
-                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out hover:scale-[1.03] text-center border-t-4 border-accent shadow-xl ring-2 ring-accent">
-                        <div class="inline-flex items-center px-3 py-1 text-sm font-medium bg-accent/10 text-accent rounded-full bg-accent text-white mb-3 mx-auto">Featured Rate</div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out hover:scale-[1.03] text-center border-t-4 border-accent shadow-xl ring-2 ring-accent">
                         <h3 class="text-2xl font-bold text-qa-dark mb-3">Automation Testing</h3>
                         <p class="text-5xl font-extrabold text-accent mb-4">₹1100<span class="text-xl text-gray-500">/hr</span></p>
                         <p class="text-lg text-gray-600 mb-6">For framework design, script development (Selenium/Appium), and CI integration.</p>
                         <ul class="text-left space-y-2 text-gray-700">
-                            <li><span class="text-accent mr-3">✓</span> Full automation framework (source code)</li>
-                            <li><span class="text-accent mr-3">✓</span> Estimated 20-30 automation test scripts</li>
-                            <li><span class="text-accent mr-3">✓</span> Execution guide + environment setup manual</li>
+                            [cite_start]<li><span class="text-accent mr-3">✓</span> Full POM Framework Codebase [cite: 140]</li>
+                            [cite_start]<li><span class="text-accent mr-3">✓</span> Estimated 20-30 Automation Scripts [cite: 116, 141]</li>
+                            [cite_start]<li><span class="text-accent mr-3">✓</span> Execution Guide + Documentation [cite: 131, 143]</li>
                         </ul>
                         <a href="contact.html?type=automation" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-md text-white bg-accent hover:bg-accent-dark transition duration-300 ease-in-out transform hover:scale-[1.01] mt-6 w-full">Build My Automation Suite</a>
                     </div>
                 </div>
 
-                <p class="text-center text-sm text-gray-500 mt-10 italic">*Final pricing depends on the scope, tools, and timelines. Contact us for a precise quote.</p>
+                <p class="text-center text-sm text-gray-500 mt-10 italic">*Final pricing depends on the scope, tools, and timelines. [cite_start]Contact us for a precise quote. [cite: 117, 216]</p>
 
-                <div class="mt-16">
-                    <h2 class="text-3xl font-bold text-center text-qa-dark mb-8">Example Project Estimates</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="mt-16 bg-qa-light p-10 rounded-xl shadow-2xl border-t-4 border-primary">
+                    <h2 class="text-3xl font-bold text-center text-qa-dark mb-6">Project Cost Estimator</h2>
+                    <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-8 text-center">Enter your estimated hours below to get an instant cost calculation based on our base rates.</p>
+                    
+                    <div class="max-w-xl mx-auto space-y-6">
+                        <div class="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0 sm:space-x-4">
+                            <label for="manual_hours" class="font-medium text-qa-dark flex-shrink-0 w-full sm:w-auto">Enter **Manual** Hours (₹800/hr)</label>
+                            <input type="number" id="manual_hours" value="0" min="0" placeholder="e.g., 60" class="w-full sm:w-32 rounded-md border-gray-300 shadow-sm p-2 text-center border focus:border-primary focus:ring-primary">
+                        </div>
+                        <div class="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0 sm:space-x-4">
+                            <label for="automation_hours" class="font-medium text-qa-dark flex-shrink-0 w-full sm:w-auto">Enter **Automation** Hours (₹1100/hr)</label>
+                            <input type="number" id="automation_hours" value="0" min="0" placeholder="e.g., 50" class="w-full sm:w-32 rounded-md border-gray-300 shadow-sm p-2 text-center border focus:border-accent focus:ring-accent">
+                        </div>
                         
-                        <div class="bg-qa-light p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out hover:scale-[1.03]">
-                            <h4 class="text-xl font-semibold text-qa-dark mb-2">Manual Testing Core Pack</h4>
-                            <p class="text-gray-600 mb-3">Targeted **60-hour** manual testing engagement for deep functional validation.</p>
-                            <p class="text-2xl font-bold text-primary">Est. ₹48,000</p>
-                        </div>
-
-                        <div class="bg-qa-light p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out hover:scale-[1.03]">
-                            <h4 class="text-xl font-semibold text-qa-dark mb-2">Automation Framework Setup</h4>
-                            <p class="text-gray-600 mb-3">Dedicated **50-hour** effort for framework creation and initial script development.</p>
-                            <p class="text-2xl font-bold text-primary">Est. ₹55,000</p>
-                        </div>
-
-                        <div class="bg-qa-light p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out hover:scale-[1.03]">
-                            <h4 class="text-xl font-semibold text-qa-dark mb-2">Complete QA Package</h4>
-                            <p class="text-gray-600 mb-3">Combined **110 hours** (60 Manual + 50 Automation) for a full assurance package.</p>
-                            <p class="text-2xl font-bold text-primary">Est. ₹1,03,000</p>
+                        <div class="text-center pt-4 border-t border-gray-300">
+                            <h3 class="text-2xl font-extrabold text-accent">Total Estimated Cost:</h3>
+                            <p id="total_cost" class="text-4xl font-extrabold text-primary mt-2">₹ 0</p>
                         </div>
                     </div>
                 </div>
