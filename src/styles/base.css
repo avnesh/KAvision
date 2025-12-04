@@ -1,0 +1,35 @@
+/* src/styles/base.css */
+
+/* 1. Include Tailwind Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 2. Define Custom Utility Classes */
+
+@layer components {
+    /* Main container for all page sections */
+    .section-container {
+        @apply max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8;
+    }
+
+    /* Primary Call-to-Action Button */
+    .primary-btn {
+        @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-md text-white bg-primary hover:bg-primary-dark transition duration-300 ease-in-out transform hover:scale-[1.01];
+    }
+
+    /* Secondary/Outline Button */
+    .secondary-btn {
+        @apply inline-flex items-center justify-center px-6 py-3 border border-primary text-base font-medium rounded-lg text-primary bg-white hover:bg-primary/10 transition duration-300 ease-in-out;
+    }
+
+    /* Standard Card Component */
+    .card {
+        @apply bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300;
+    }
+
+    /* Small Tag/Pill for features or types */
+    .pill-tag {
+        @apply inline-flex items-center px-3 py-1 text-sm font-medium bg-accent/10 text-accent rounded-full;
+    }
+}

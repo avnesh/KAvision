@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | KA Vision - Comprehensive QA</title>
+    <meta name="description" content="Detailed description of KA Vision's software testing services: Manual, Automation (Selenium/Appium), API (Postman), and Consulting.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#154483',
+                        'primary-dark': '#0f3261',
+                        'accent': '#6EB53B',
+                        'accent-dark': '#558a2d',
+                        'qa-dark': '#212529',
+                        'qa-light': '#F8F9FA',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-qa-light text-qa-dark font-sans">
+
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="bg-primary/10">
+            <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl font-extrabold text-qa-dark mb-4">Comprehensive QA Services</h1>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">From detailed manual testing to scalable automation frameworks, we cover your entire software delivery pipeline.</p>
+            </div>
+        </section>
+
+        <section class="bg-white">
+            <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 space-y-16">
+
+                <div id="manual" class="lg:grid lg:grid-cols-3 lg:gap-12 items-center border-b pb-12 transition duration-300 hover:bg-qa-light/50">
+                    <div class="lg:col-span-1">
+                        <h2 class="text-3xl font-bold text-primary mb-3">Manual Testing</h2>
+                        <span class="inline-flex items-center px-3 py-1 text-sm font-medium bg-accent/10 text-accent rounded-full">Functional | Exploratory | End-to-End</span>
+                    </div>
+                    <div class="lg:col-span-2 mt-4 lg:mt-0">
+                        <p class="text-lg text-gray-700 mb-4">Our human-centric approach finds the bugs automation misses. We focus on real-world user scenarios, usability, and design consistency.</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li>**Full Functional Testing**: All user stories and acceptance criteria.</li>
+                            <li>**UI/UX Validation**: Layout, responsiveness, and visual alignment.</li>
+                            <li>**Exploratory Testing**: Unstructured testing to uncover deep, non-obvious defects.</li>
+                            <li>**Cross-Browser/Device**: Assuring compatibility on major platforms.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="automation" class="lg:grid lg:grid-cols-3 lg:gap-12 items-center border-b pb-12 transition duration-300 hover:bg-qa-light/50">
+                    <div class="lg:col-span-1">
+                        <h2 class="text-3xl font-bold text-primary mb-3">Automation Testing</h2>
+                        <span class="inline-flex items-center px-3 py-1 text-sm font-medium bg-accent/10 text-accent rounded-full">Selenium | TestNG | Regression</span>
+                    </div>
+                    <div class="lg:col-span-2 mt-4 lg:mt-0">
+                        <p class="text-lg text-gray-700 mb-4">We build maintainable, scalable frameworks using **Selenium, TestNG, and Java** to create a fast, stable regression suite for every deployment.</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li>**Framework Setup (POM)**: Page Object Model for maintainability.</li>
+                            <li>**Core Regression Suite**: Covering critical end-to-end user flows.</li>
+                            <li>**Reporting**: Detailed HTML reports for results.</li>
+                            <li>**Tech Stack**: Selenium WebDriver, TestNG, XPath/Locators.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="api" class="lg:grid lg:grid-cols-3 lg:gap-12 items-center border-b pb-12 transition duration-300 hover:bg-qa-light/50">
+                    <div class="lg:col-span-1">
+                        <h2 class="text-3xl font-bold text-primary mb-3">API Testing</h2>
+                        <span class="inline-flex items-center px-3 py-1 text-sm font-medium bg-accent/10 text-accent rounded-full">Postman | Backend Validation</span>
+                    </div>
+                    <div class="lg:col-span-2 mt-4 lg:mt-0">
+                        <p class="text-lg text-gray-700 mb-4">Validate the backbone of your application. We test RESTful APIs for functionality, reliability, performance, and security flaws.</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li>**Tooling**: Expertise in **Postman** for rapid and structured API testing.</li>
+                            <li>**Data Validation**: Checking payload integrity and database consistency (**SQL** Basics).</li>
+                            <li>**Microservice Validation**: Ensuring inter-service communication integrity.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="mobile" class="lg:grid lg:grid-cols-3 lg:gap-12 items-center border-b pb-12 transition duration-300 hover:bg-qa-light/50">
+                    <div class="lg:col-span-1">
+                        <h2 class="text-3xl font-bold text-primary mb-3">Mobile App Testing</h2>
+                        <span class="inline-flex items-center px-3 py-1 text-sm font-medium bg-accent/10 text-accent rounded-full">Android | iOS | Appium</span>
+                    </div>
+                    <div class="lg:col-span-2 mt-4 lg:mt-0">
+                        <p class="text-lg text-gray-700 mb-4">Ensuring your application works flawlessly on mobile devices, covering both native apps and responsive web views.</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li>**Native App Automation**: Using **Appium** for reliable Android/iOS testing.</li>
+                            <li>**Responsiveness**: Testing key viewports (360px, 768px, etc.).</li>
+                            <li>**Performance**: Light performance checks and load time observations.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="strategy" class="lg:grid lg:grid-cols-3 lg:gap-12 items-center transition duration-300 hover:bg-qa-light/50">
+                    <div class="lg:col-span-1">
+                        <h2 class="text-3xl font-bold text-primary mb-3">Test Strategy & Consulting</h2>
+                        <span class="inline-flex items-center px-3 py-1 text-sm font-medium bg-accent/10 text-accent rounded-full">SDLC | Planning | Reporting</span>
+                    </div>
+                    <div class="lg:col-span-2 mt-4 lg:mt-0">
+                        <p class="text-lg text-gray-700 mb-4">We help define your QA maturity roadmap. Services include test plan creation, setting up JIRA workflows, and performance testing with **JMeter**.</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li>**Performance/Load Testing**: Using **JMeter** to check system scalability.</li>
+                            <li>**Process Improvement**: Implementing **Agile/Scrum** and efficient STLC/SDLC.</li>
+                            <li>**Defect Management**: Professional tracking and reporting in **JIRA/Bugzilla**.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

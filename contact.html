@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | KA Vision - Get a Quote</title>
+    <meta name="description" content="Contact KA Vision for a free QA consultation. Find our email, phone, and send us your project requirements.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#154483',
+                        'primary-dark': '#0f3261',
+                        'accent': '#6EB53B',
+                        'accent-dark': '#558a2d',
+                        'qa-dark': '#212529',
+                        'qa-light': '#F8F9FA',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-qa-light text-qa-dark font-sans">
+
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="bg-primary/10">
+            <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl font-extrabold text-qa-dark mb-4">Ready to Launch with Confidence?</h1>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">Get in touch to discuss your project requirements and receive a customized QA proposal.</p>
+            </div>
+        </section>
+
+        <section class="bg-white">
+            <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 lg:grid lg:grid-cols-2 lg:gap-16">
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h2 class="text-3xl font-bold text-qa-dark mb-6">Send Us Your Requirements</h2>
+                    <form action="#" method="POST" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Name*</label>
+                            <input type="text" name="name" id="name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary p-3 border">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email*</label>
+                            <input type="email" name="email" id="email" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary p-3 border">
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+                                <input type="tel" name="phone" id="phone" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary p-3 border">
+                            </div>
+                            <div>
+                                <label for="company" class="block text-sm font-medium text-gray-700">Company Name</label>
+                                <input type="text" name="company" id="company" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary p-3 border">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="project-type" class="block text-sm font-medium text-gray-700">Project Type*</label>
+                            <select id="project-type" name="project-type" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary p-3 border bg-white">
+                                <option value="">Select an option</option>
+                                <option value="manual">Manual Testing Only</option>
+                                <option value="automation">Automation Testing Only</option>
+                                <option value="full-package">Manual + Automation (Full Package)</option>
+                                <option value="consulting">QA Strategy/Consulting</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message/Requirements*</label>
+                            <textarea id="message" name="message" rows="4" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary p-3 border"></textarea>
+                        </div>
+                        <button type="submit" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-md text-white bg-primary hover:bg-primary-dark transition duration-300 ease-in-out transform hover:scale-[1.01] w-full">Submit Request</button>
+                    </form>
+                </div>
+
+                <div class="mt-12 lg:mt-0">
+                    <h2 class="text-3xl font-bold text-qa-dark mb-6">Our Contact Details</h2>
+                    <div class="space-y-6">
+                        <div class="bg-qa-light p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                            <h4 class="font-semibold text-xl text-primary mb-2">Email Us</h4>
+                            <a href="mailto:kavision1430@gmail.com" class="text-lg text-gray-700 hover:text-accent transition duration-150">kavision1430@gmail.com</a>
+                        </div>
+                        <div class="bg-qa-light p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                            <h4 class="font-semibold text-xl text-primary mb-2">Call Us</h4>
+                            <a href="tel:+917710819626" class="text-lg text-gray-700 hover:text-accent transition duration-150">+91 7710819626</a>
+                        </div>
+                        <div class="bg-qa-light p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                            <h4 class="font-semibold text-xl text-primary mb-2">Communication Channel</h4>
+                            <p class="text-lg text-gray-700">We communicate via WhatsApp, Email, or preferred channel.</p>
+                        </div>
+                    </div>
+
+                    <div id="faq" class="mt-12">
+                        <h3 class="text-2xl font-bold text-qa-dark mb-4">Quick FAQ</h3>
+                        <div class="space-y-4">
+                            <div class="p-4 border rounded-lg hover:bg-white transition duration-300">
+                                <h4 class="font-medium text-qa-dark">How does your hourly billing work?</h4>
+                                <p class="text-sm text-gray-600 mt-1">Our services are primarily charged on an hourly basis. We provide detailed reports of hours spent on test execution and reporting.</p>
+                            </div>
+                            <div class="p-4 border rounded-lg hover:bg-white transition duration-300">
+                                <h4 class="font-medium text-qa-dark">What tools do you use?</h4>
+                                <p class="text-sm text-gray-600 mt-1">Our expertise covers **Selenium, Appium, JMeter, Postman, JIRA, and TestNG**. We adapt to your project's specific needs.</p>
+                            </div>
+                            <div class="p-4 border rounded-lg hover:bg-white transition duration-300">
+                                <h4 class="font-medium text-qa-dark">What support is included after delivery?</h4>
+                                <p class="text-sm text-gray-600 mt-1">We offer post-delivery support for bug review (**15 days**) and any clarifications needed (**30 days**).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
