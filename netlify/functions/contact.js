@@ -32,20 +32,71 @@ exports.handler = async (event, context) => {
             }
         });
 
+        // Map project types to readable labels
+        const projectTypeLabels = {
+            'manual': 'Manual Testing Only',
+            'automation': 'Automation Testing Only',
+            'full-package': 'Manual + Automation (Full Package)',
+            'consulting': 'QA Strategy/Consulting'
+        };
+        const readableProjectType = projectTypeLabels[projectType] || projectType;
+
         const mailOptions = {
-            from: `"${name}" <${email}>`, // Note: Some providers override 'from' to auth user
+            from: `"${name}" <${email}>`,
             to: process.env.Receiver_Email || process.env.SMTP_USER,
             subject: `New Inquiry from ${name} - ${company || 'Individual'}`,
+            text: `
+New Contact Form Submission
+
+Name: ${name}
+Email: ${email}
+Phone: ${phone || 'N/A'}
+Company: ${company || 'N/A'}
+Project Type: ${readableProjectType}
+
+Message:
+${message}
+            `,
             html: `
-                <h3>New Contact Form Submission</h3>
-                <p><strong>Name:</strong> ${name}</p>
-                <p><strong>Email:</strong> ${email}</p>
-                <p><strong>Phone:</strong> ${phone || 'N/A'}</p>
-                <p><strong>Company:</strong> ${company || 'N/A'}</p>
-                <p><strong>Project Type:</strong> ${projectType}</p>
-                <br>
-                <p><strong>Message:</strong></p>
-                <p>${message}</p>
+                <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+                    <h2 style="color: #154483; border-bottom: 2px solid #eee; padding-bottom: 10px;">New Contact Form Submission</h2>
+                    
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+                        <tr>
+                            <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold; width: 150px;">Name:</td>
+                            <td style="padding: 10px; border-bottom: 1px solid #eee;">${name}</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold;">Email:</td>
+                            <td style="padding: 10px; border-bottom: 1px solid #eee;">
+                                <a href="mailto:${email}" style="color: #154483; text-decoration: none;">${email}</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold;">Phone:</td>
+                            <td style="padding: 10px; border-bottom: 1px solid #eee;">${phone || 'N/A'}</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold;">Company:</td>
+                            <td style="padding: 10px; border-bottom: 1px solid #eee;">${company || 'N/A'}</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold;">Project Type:</td>
+                            <td style="padding: 10px; border-bottom: 1px solid #eee;">${readableProjectType}</td>
+                        </tr>
+                    </table>
+
+                    <div style="margin-top: 20px;">
+                        <p style="font-weight: bold; margin-bottom: 10px;">Message:</p>
+                        <div style="background-color: #f9fafb; padding: 15px; border-radius: 5px; border: 1px solid #eee;">
+                            ${message.replace(/\n/g, '<br>')}
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 30px; font-size: 12px; color: #888; text-align: center;">
+                        Sent via KA Vision Website Contact Form
+                    </div>
+                </div>
             `
         };
 
