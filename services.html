@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services | KA Vision - Comprehensive QA</title>
-    <meta name="description" content="Detailed description of KA Vision's software testing services: Manual, Automation (Selenium/Appium), API (Postman), and Consulting.">
-    
+    <meta name="description"
+        content="Detailed description of KA Vision's software testing services: Manual, Automation (Selenium/Appium), API (Postman), and Consulting.">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -35,29 +37,39 @@
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body class="bg-qa-light text-qa-dark font-sans">
 
     <div id="header-placeholder"></div>
 
     <main>
         <section class="bg-primary/10">
-            <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 text-center">
+            <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-down">
                 <h1 class="text-4xl font-extrabold text-qa-dark mb-4">Comprehensive QA Services</h1>
-                <p class="text-lg text-gray-700 max-w-3xl mx-auto">From detailed manual testing to scalable automation frameworks, we cover your entire software delivery pipeline.</p>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">From detailed manual testing to scalable automation
+                    frameworks, we cover your entire software delivery pipeline.</p>
             </div>
         </section>
 
         <section class="bg-qa-light">
             <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 space-y-16">
 
-                <div id="manual" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out hover:scale-[1.01] lg:grid lg:grid-cols-3 lg:gap-12 items-center border-b border-primary/10 pb-6">
+                <div id="manual"
+                    class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out hover:scale-[1.01] lg:grid lg:grid-cols-3 lg:gap-12 items-center border-b border-primary/10 pb-6"
+                    data-aos="fade-up" data-aos-delay="0">
                     <div class="lg:col-span-1">
                         <h2 class="text-3xl font-bold text-primary mb-3">Manual Testing</h2>
-                        <span class="inline-flex items-center px-3 py-1 text-sm font-medium bg-accent/10 text-accent rounded-full">Functional | Exploratory | End-to-End</span>
+                        <span
+                            class="inline-flex items-center px-3 py-1 text-sm font-medium bg-accent/10 text-accent rounded-full">Functional
+                            | Exploratory | End-to-End</span>
                     </div>
                     <div class="lg:col-span-2 mt-4 lg:mt-0">
-                        <p class="text-lg text-gray-700 mb-4">Our human-centric approach finds the bugs automation misses. We focus on real-world user scenarios, usability, and design consistency.</p>
+                        <p class="text-lg text-gray-700 mb-4">Our human-centric approach finds the bugs automation
+                            misses. We focus on real-world user scenarios, usability, and design consistency.</p>
                         <ul class="list-disc list-inside text-gray-600 space-y-1">
                             <li><strong>Full Functional Testing:</strong> All user stories and acceptance criteria.</li>
                             <li><strong>UI/UX Validation:</strong> Layout, responsiveness, and visual alignment.</li>
@@ -66,61 +78,90 @@
                     </div>
                 </div>
 
-                <div id="automation" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out hover:scale-[1.01] lg:grid lg:grid-cols-3 lg:gap-12 items-center border-b border-primary/10 pb-6">
+                <div id="automation"
+                    class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out hover:scale-[1.01] lg:grid lg:grid-cols-3 lg:gap-12 items-center border-b border-primary/10 pb-6"
+                    data-aos="fade-up" data-aos-delay="100">
                     <div class="lg:col-span-1">
                         <h2 class="text-3xl font-bold text-primary mb-3">Automation Testing</h2>
-                        <span class="inline-flex items-center px-3 py-1 text-sm font-medium bg-accent/10 text-accent rounded-full">Selenium | TestNG | Regression</span>
+                        <span
+                            class="inline-flex items-center px-3 py-1 text-sm font-medium bg-accent/10 text-accent rounded-full">Selenium
+                            | TestNG | Regression</span>
                     </div>
                     <div class="lg:col-span-2 mt-4 lg:mt-0">
-                        <p class="text-lg text-gray-700 mb-4">We build maintainable, scalable frameworks using <strong>Selenium, TestNG, and Java</strong> to create a fast, stable regression suite for every deployment.</p>
+                        <p class="text-lg text-gray-700 mb-4">We build maintainable, scalable frameworks using
+                            <strong>Selenium, TestNG, and Java</strong> to create a fast, stable regression suite for
+                            every deployment.</p>
                         <ul class="list-disc list-inside text-gray-600 space-y-1">
                             <li><strong>Framework Setup (POM):</strong> Page Object Model for maintainability.</li>
-                            <li><strong>Core Regression Suite:</strong> Covers critical end-to-end user flows for every release cycle.</li>
+                            <li><strong>Core Regression Suite:</strong> Covers critical end-to-end user flows for every
+                                release cycle.</li>
                             <li><strong>Reporting:</strong> Detailed HTML reports (Extent/Allure) for results.</li>
                         </ul>
                     </div>
                 </div>
 
-                <div id="api" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out hover:scale-[1.01] lg:grid lg:grid-cols-3 lg:gap-12 items-center border-b border-primary/10 pb-6">
+                <div id="api"
+                    class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out hover:scale-[1.01] lg:grid lg:grid-cols-3 lg:gap-12 items-center border-b border-primary/10 pb-6"
+                    data-aos="fade-up" data-aos-delay="200">
                     <div class="lg:col-span-1">
                         <h2 class="text-3xl font-bold text-primary mb-3">API Testing</h2>
-                        <span class="inline-flex items-center px-3 py-1 text-sm font-medium bg-accent/10 text-accent rounded-full">Postman | Backend Validation</span>
+                        <span
+                            class="inline-flex items-center px-3 py-1 text-sm font-medium bg-accent/10 text-accent rounded-full">Postman
+                            | Backend Validation</span>
                     </div>
                     <div class="lg:col-span-2 mt-4 lg:mt-0">
-                        <p class="text-lg text-gray-700 mb-4">Validate the backbone of your application. We test RESTful APIs for functionality, reliability, performance, and security flaws using dedicated tooling.</p>
+                        <p class="text-lg text-gray-700 mb-4">Validate the backbone of your application. We test RESTful
+                            APIs for functionality, reliability, performance, and security flaws using dedicated
+                            tooling.</p>
                         <ul class="list-disc list-inside text-gray-600 space-y-1">
-                            <li><strong>Tooling:</strong> Expertise in <strong>Postman</strong> for rapid and structured API testing.</li>
-                            <li><strong>Data Validation:</strong> Checking payload integrity and database consistency (<strong>SQL</strong> Basics).</li>
+                            <li><strong>Tooling:</strong> Expertise in <strong>Postman</strong> for rapid and structured
+                                API testing.</li>
+                            <li><strong>Data Validation:</strong> Checking payload integrity and database consistency
+                                (<strong>SQL</strong> Basics).</li>
                         </ul>
                     </div>
                 </div>
 
-                <div id="mobile" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out hover:scale-[1.01] lg:grid lg:grid-cols-3 lg:gap-12 items-center border-b border-primary/10 pb-6">
+                <div id="mobile"
+                    class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out hover:scale-[1.01] lg:grid lg:grid-cols-3 lg:gap-12 items-center border-b border-primary/10 pb-6"
+                    data-aos="fade-up" data-aos-delay="300">
                     <div class="lg:col-span-1">
                         <h2 class="text-3xl font-bold text-primary mb-3">Mobile App Testing</h2>
-                        <span class="inline-flex items-center px-3 py-1 text-sm font-medium bg-accent/10 text-accent rounded-full">Android | iOS | Appium</span>
+                        <span
+                            class="inline-flex items-center px-3 py-1 text-sm font-medium bg-accent/10 text-accent rounded-full">Android
+                            | iOS | Appium</span>
                     </div>
                     <div class="lg:col-span-2 mt-4 lg:mt-0">
-                        <p class="text-lg text-gray-700 mb-4">Ensuring your application works flawlessly on mobile devices, covering both native apps (using Appium) and responsive web views.</p>
+                        <p class="text-lg text-gray-700 mb-4">Ensuring your application works flawlessly on mobile
+                            devices, covering both native apps (using Appium) and responsive web views.</p>
                         <ul class="list-disc list-inside text-gray-600 space-y-1">
-                            <li><strong>Native App Automation:</strong> Using <strong>Appium</strong> for reliable Android/iOS testing.</li>
+                            <li><strong>Native App Automation:</strong> Using <strong>Appium</strong> for reliable
+                                Android/iOS testing.</li>
                             <li><strong>Responsiveness:</strong> Testing across major mobile and tablet viewports.</li>
                             <li><strong>Performance:</strong> Light performance checks (page load observations).</li>
                         </ul>
                     </div>
                 </div>
 
-                <div id="strategy" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out hover:scale-[1.01] lg:grid lg:grid-cols-3 lg:gap-12 items-center">
+                <div id="strategy"
+                    class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out hover:scale-[1.01] lg:grid lg:grid-cols-3 lg:gap-12 items-center"
+                    data-aos="fade-up" data-aos-delay="400">
                     <div class="lg:col-span-1">
                         <h2 class="text-3xl font-bold text-primary mb-3">Test Strategy & Consulting</h2>
-                        <span class="inline-flex items-center px-3 py-1 text-sm font-medium bg-accent/10 text-accent rounded-full">SDLC | Planning | Reporting</span>
+                        <span
+                            class="inline-flex items-center px-3 py-1 text-sm font-medium bg-accent/10 text-accent rounded-full">SDLC
+                            | Planning | Reporting</span>
                     </div>
                     <div class="lg:col-span-2 mt-4 lg:mt-0">
-                        <p class="text-lg text-gray-700 mb-4">We help define your QA maturity roadmap. Services include test plan creation, setting up JIRA workflows, and performance testing with <strong>JMeter</strong>.</p>
+                        <p class="text-lg text-gray-700 mb-4">We help define your QA maturity roadmap. Services include
+                            test plan creation, setting up JIRA workflows, and performance testing with
+                            <strong>JMeter</strong>.</p>
                         <ul class="list-disc list-inside text-gray-600 space-y-1">
-                            <li><strong>Performance/Load Testing:</strong> Using <strong>JMeter</strong> to check system scalability.</li>
+                            <li><strong>Performance/Load Testing:</strong> Using <strong>JMeter</strong> to check system
+                                scalability.</li>
                             <li><strong>Process Improvement:</strong> Implementing Agile/Scrum methodologies.</li>
-                            <li><strong>Defect Management:</strong> Professional tracking and reporting in <strong>JIRA/Bugzilla</strong>.</li>
+                            <li><strong>Defect Management:</strong> Professional tracking and reporting in
+                                <strong>JIRA/Bugzilla</strong>.</li>
                         </ul>
                     </div>
                 </div>
@@ -131,6 +172,10 @@
 
     <div id="footer-placeholder"></div>
 
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

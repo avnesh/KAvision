@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | KA Vision - Get a Quote</title>
-    <meta name="description" content="Contact KA Vision for a free QA consultation. Find our email, phone, and send us your project requirements.">
-    
+    <meta name="description"
+        content="Contact KA Vision for a free QA consultation. Find our email, phone, and send us your project requirements.">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -35,46 +37,59 @@
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body class="bg-qa-light text-qa-dark font-sans">
 
     <div id="header-placeholder"></div>
 
     <main>
         <section class="bg-primary/10">
-            <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 text-center">
+            <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-down">
                 <h1 class="text-4xl font-extrabold text-qa-dark mb-4">Ready to Launch with Confidence?</h1>
-                <p class="text-lg text-gray-700 max-w-3xl mx-auto">Get in touch to discuss your project requirements and receive a customized QA proposal.</p>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">Get in touch to discuss your project requirements and
+                    receive a customized QA proposal.</p>
             </div>
         </section>
 
         <section class="bg-qa-light">
             <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 lg:grid lg:grid-cols-2 lg:gap-16">
-                
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out border-2 border-qa-light/50 h-fit">
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out border-2 border-qa-light/50 h-fit"
+                    data-aos="fade-right">
                     <h2 class="text-3xl font-bold text-qa-dark mb-6">Send Us Your Requirements</h2>
                     <form id="contact-form" class="space-y-4">
                         <div>
                             <label for="name" class="block text-sm font-medium text-gray-700">Name*</label>
-                            <input type="text" name="name" id="name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary p-3 border">
+                            <input type="text" name="name" id="name" required
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary p-3 border">
                         </div>
                         <div>
                             <label for="email" class="block text-sm font-medium text-gray-700">Email*</label>
-                            <input type="email" name="email" id="email" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary p-3 border">
+                            <input type="email" name="email" id="email" required
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary p-3 border">
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
                                 <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
-                                <input type="tel" name="phone" id="phone" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary p-3 border">
+                                <input type="tel" name="phone" id="phone"
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary p-3 border">
                             </div>
                             <div>
-                                <label for="company" class="block text-sm font-medium text-gray-700">Company Name</label>
-                                <input type="text" name="company" id="company" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary p-3 border">
+                                <label for="company" class="block text-sm font-medium text-gray-700">Company
+                                    Name</label>
+                                <input type="text" name="company" id="company"
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary p-3 border">
                             </div>
                         </div>
                         <div>
-                            <label for="project-type" class="block text-sm font-medium text-gray-700">Project Type*</label>
-                            <select id="project-type" name="projectType" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary p-3 border bg-white">
+                            <label for="project-type" class="block text-sm font-medium text-gray-700">Project
+                                Type*</label>
+                            <select id="project-type" name="projectType" required
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary p-3 border bg-white">
                                 <option value="">Select an option</option>
                                 <option value="manual">Manual Testing Only</option>
                                 <option value="automation">Automation Testing Only</option>
@@ -83,21 +98,25 @@
                             </select>
                         </div>
                         <div>
-                            <label for="message" class="block text-sm font-medium text-gray-700">Message/Requirements*</label>
-                            <textarea id="message" name="message" rows="4" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary p-3 border"></textarea>
+                            <label for="message"
+                                class="block text-sm font-medium text-gray-700">Message/Requirements*</label>
+                            <textarea id="message" name="message" rows="4" required
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary p-3 border"></textarea>
                         </div>
                         <div id="form-status" class="hidden text-sm font-medium mt-2"></div>
-                        <button type="submit" id="submit-btn" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-md text-white bg-accent hover:bg-accent-dark transition duration-300 ease-in-out transform hover:scale-[1.01] w-full">Submit Request</button>
+                        <button type="submit" id="submit-btn"
+                            class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-md text-white bg-accent hover:bg-accent-dark transition duration-300 ease-in-out transform hover:scale-[1.01] w-full">Submit
+                            Request</button>
                     </form>
 
                     <script>
-                        document.getElementById('contact-form').addEventListener('submit', async function(e) {
+                        document.getElementById('contact-form').addEventListener('submit', async function (e) {
                             e.preventDefault();
-                            
+
                             const submitBtn = document.getElementById('submit-btn');
                             const statusDiv = document.getElementById('form-status');
                             const originalText = submitBtn.textContent;
-                            
+
                             // Visual feedback
                             submitBtn.disabled = true;
                             submitBtn.textContent = 'Sending...';
@@ -146,91 +165,116 @@
                         });
                     </script>
                 </div>
-                <div class="mt-12 lg:mt-0">
+                <div class="mt-12 lg:mt-0" data-aos="fade-left">
                     <h2 class="text-3xl font-bold text-qa-dark mb-6">Our Contact Details</h2>
                     <div class="space-y-6">
-                        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                        <div
+                            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
                             <h4 class="font-semibold text-xl text-primary mb-2">Email Us</h4>
-                            <a href="mailto:kavision1430@gmail.com" class="text-lg text-gray-700 hover:text-accent transition duration-150">kavision1430@gmail.com</a>
+                            <a href="mailto:kavision1430@gmail.com"
+                                class="text-lg text-gray-700 hover:text-accent transition duration-150">kavision1430@gmail.com</a>
                         </div>
-                        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                        <div
+                            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
                             <h4 class="font-semibold text-xl text-primary mb-2">Call Us</h4>
-                            <a href="tel:+917710819626" class="text-lg text-gray-700 hover:text-accent transition duration-150">+91 7710819626</a>
+                            <a href="tel:+917710819626"
+                                class="text-lg text-gray-700 hover:text-accent transition duration-150">+91
+                                7710819626</a>
                         </div>
-                        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                        <div
+                            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
                             <h4 class="font-semibold text-xl text-primary mb-2">Communication Channel</h4>
-                            <p class="text-lg text-gray-700">We communicate via WhatsApp, Email, or preferred channel.</p>
+                            <p class="text-lg text-gray-700">We communicate via WhatsApp, Email, or preferred channel.
+                            </p>
                         </div>
                     </div>
 
-                   <div id="faq" class="mt-12">
-    <h3 class="text-2xl font-bold text-qa-dark mb-6">Frequently Asked Questions</h3>
+                    <div id="faq" class="mt-12">
+                        <h3 class="text-2xl font-bold text-qa-dark mb-6">Frequently Asked Questions</h3>
 
-    <div class="space-y-4">
+                        <div class="space-y-4">
 
-        <!-- FAQ Item -->
-        <div class="faq-item bg-white rounded-xl shadow-md border-l-4 border-primary border-t-0 border-b-0 overflow-hidden">
-            <button class="faq-btn w-full flex items-center justify-between p-5 text-left" onclick="toggleFaq(this)">
-                <span class="text-lg font-semibold text-qa-dark">How does your hourly billing work?</span>
-                <svg class="faq-icon w-6 h-6 text-primary transition-transform duration-300"
-                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                           d="M12 4v16m8-8H4" />
-                </svg>
-            </button>
-            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                <div class="px-5 pb-5 pt-2 text-gray-600">
-                    Our services are charged hourly with transparent reporting of execution time, bug reporting,
-                    meetings, and documentation.
+                            <!-- FAQ Item -->
+                            <div
+                                class="faq-item bg-white rounded-xl shadow-md border-l-4 border-primary border-t-0 border-b-0 overflow-hidden">
+                                <button class="faq-btn w-full flex items-center justify-between p-5 text-left"
+                                    onclick="toggleFaq(this)">
+                                    <span class="text-lg font-semibold text-qa-dark">How does your hourly billing
+                                        work?</span>
+                                    <svg class="faq-icon w-6 h-6 text-primary transition-transform duration-300"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 4v16m8-8H4" />
+                                    </svg>
+                                </button>
+                                <div
+                                    class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                    <div class="px-5 pb-5 pt-2 text-gray-600">
+                                        Our services are charged hourly with transparent reporting of execution time,
+                                        bug reporting,
+                                        meetings, and documentation.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item -->
+                            <div
+                                class="faq-item bg-white rounded-xl shadow-md border-l-4 border-primary border-t-0 border-b-0 overflow-hidden">
+                                <button class="faq-btn w-full flex items-center justify-between p-5 text-left"
+                                    onclick="toggleFaq(this)">
+                                    <span class="text-lg font-semibold text-qa-dark">What tools do you use?</span>
+                                    <svg class="faq-icon w-6 h-6 text-accent transition-transform duration-300"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 4v16m8-8H4" />
+                                    </svg>
+                                </button>
+                                <div
+                                    class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                    <div class="px-5 pb-5 pt-2 text-gray-600">
+                                        We work with <strong>Selenium, Appium, JMeter, Postman, REST Assured, JIRA,
+                                            TestNG,</strong>
+                                        and more, adapting to your project's needs.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item -->
+                            <div
+                                class="faq-item bg-white rounded-xl shadow-md border-l-4 border-primary border-t-0 border-b-0 overflow-hidden">
+                                <button class="faq-btn w-full flex items-center justify-between p-5 text-left"
+                                    onclick="toggleFaq(this)">
+                                    <span class="text-lg font-semibold text-qa-dark">What support is included after
+                                        delivery?</span>
+                                    <svg class="faq-icon w-6 h-6 text-primary transition-transform duration-300"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 4v16m8-8H4" />
+                                    </svg>
+                                </button>
+                                <div
+                                    class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                    <div class="px-5 pb-5 pt-2 text-gray-600">
+                                        We provide <strong>15 days bug support</strong> and <strong>30 days
+                                            clarification support</strong>
+                                        after delivery.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
-            </div>
-        </div>
-
-        <!-- FAQ Item -->
-        <div class="faq-item bg-white rounded-xl shadow-md border-l-4 border-primary border-t-0 border-b-0 overflow-hidden">
-            <button class="faq-btn w-full flex items-center justify-between p-5 text-left" onclick="toggleFaq(this)">
-                <span class="text-lg font-semibold text-qa-dark">What tools do you use?</span>
-                <svg class="faq-icon w-6 h-6 text-accent transition-transform duration-300"
-                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                           d="M12 4v16m8-8H4" />
-                </svg>
-            </button>
-            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                <div class="px-5 pb-5 pt-2 text-gray-600">
-                    We work with <strong>Selenium, Appium, JMeter, Postman, REST Assured, JIRA, TestNG,</strong>
-                    and more, adapting to your project's needs.
-                </div>
-            </div>
-        </div>
-
-        <!-- FAQ Item -->
-        <div class="faq-item bg-white rounded-xl shadow-md border-l-4 border-primary border-t-0 border-b-0 overflow-hidden">
-            <button class="faq-btn w-full flex items-center justify-between p-5 text-left" onclick="toggleFaq(this)">
-                <span class="text-lg font-semibold text-qa-dark">What support is included after delivery?</span>
-                <svg class="faq-icon w-6 h-6 text-primary transition-transform duration-300"
-                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                           d="M12 4v16m8-8H4" />
-                </svg>
-            </button>
-            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                <div class="px-5 pb-5 pt-2 text-gray-600">
-                    We provide <strong>15 days bug support</strong> and <strong>30 days clarification support</strong>
-                    after delivery.
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-            </div>
         </section>
     </main>
 
     <div id="footer-placeholder"></div>
 
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
