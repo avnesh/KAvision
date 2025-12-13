@@ -29,7 +29,7 @@ function setupCostEstimator() {
     // Defined rates from the pricing table (Editable here)
     const MANUAL_RATE = 800;
     const AUTOMATION_RATE = 1100;
-    
+
     const manualInput = document.getElementById('manual_hours');
     const automationInput = document.getElementById('automation_hours');
     const totalCostDisplay = document.getElementById('total_cost');
@@ -53,7 +53,7 @@ function setupCostEstimator() {
         const formatter = new Intl.NumberFormat('en-IN', {
             style: 'currency',
             currency: 'INR',
-            maximumFractionDigits: 0, 
+            maximumFractionDigits: 0,
         });
 
         // Update the display element
@@ -65,6 +65,8 @@ function setupCostEstimator() {
     automationInput.addEventListener('input', calculateCost);
 
     // Run once on page load to set the initial formatted value (₹ 0)
+    if (!manualInput.value) manualInput.value = 0;
+    if (!automationInput.value) automationInput.value = 0;
     calculateCost();
 }
 
@@ -80,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mobileMenuBtn.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
             });
-            
+
             closeMenuBtn.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
             });
