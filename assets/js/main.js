@@ -97,7 +97,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 2. Load Footer component
-    loadComponent('footer-placeholder', 'footer.html');
+    loadComponent('footer-placeholder', 'footer.html').then(() => {
+        const scrollBtn = document.getElementById('scroll-to-top');
+        if (scrollBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollBtn.classList.remove('opacity-0', 'translate-y-10', 'invisible');
+                } else {
+                    scrollBtn.classList.add('opacity-0', 'translate-y-10', 'invisible');
+                }
+            });
+
+            scrollBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+    });
 
     // 3. Initialize Cost Estimator (Runs only on pricing.html if elements are present)
     setupCostEstimator();
