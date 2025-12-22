@@ -79,19 +79,33 @@ document.addEventListener('DOMContentLoaded', () => {
         const closeMenuBtn = document.getElementById('close-menu-btn');
 
         if (mobileMenuBtn && mobileMenu) {
-            mobileMenuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
+            const openMenu = () => {
+                mobileMenu.classList.remove('hidden');
+                document.body.classList.add('overflow-hidden');
+            };
 
-            closeMenuBtn.addEventListener('click', () => {
+            const closeMenu = () => {
                 mobileMenu.classList.add('hidden');
-            });
+                document.body.classList.remove('overflow-hidden');
+            };
+
+            const toggleMenu = () => {
+                if (mobileMenu.classList.contains('hidden')) {
+                    openMenu();
+                } else {
+                    closeMenu();
+                }
+            };
+
+            mobileMenuBtn.addEventListener('click', toggleMenu);
+
+            if (closeMenuBtn) {
+                closeMenuBtn.addEventListener('click', closeMenu);
+            }
 
             // Close menu on link click (for internal anchor jumps)
             mobileMenu.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
-                });
+                link.addEventListener('click', closeMenu);
             });
         }
     });

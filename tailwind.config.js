@@ -1,22 +1,22 @@
-<script src="https://cdn.tailwindcss.com"></script>
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        // Custom KA Vision Colors (Blue/Green Scheme based on Logo)
-                        'primary': '#154483',        /* Dark Blue K shape */
-                        'primary-dark': '#0f3261',
-                        'accent': '#6EB53B',         /* Light Green Eye shape */
-                        'accent-dark': '#558a2d',
-                        'qa-dark': '#212529',        /* Near-black for main text */
-                        'qa-light': '#F8F9FA',       /* Off-white for background */
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
-                    },
-                }
-            }
-        }
-    </script>
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './*.html',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'primary': '#007BFF', 
+        'primary-dark': '#0056b3', 
+        'accent': '#28A745', 
+        'accent-dark': '#1e7e34', 
+        'qa-dark': '#212529', 
+        'qa-light': '#F8F9FA', 
+      },
+      fontFamily: {
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
+      },
+    },
+  },
+  plugins: [],
+}
